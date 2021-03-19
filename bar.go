@@ -1,9 +1,7 @@
 package bar
 
-import "github.com/vingarcia/foo"
-
-func main() {
-	foo.Main()
-}
-
 type Bar struct{}
+
+func (b Bar) String() string {
+	return "its a bar struct"
+}
